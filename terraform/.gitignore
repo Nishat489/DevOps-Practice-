@@ -7,3 +7,8 @@ terraform.tfvars
 # Ignore SSH private keys
 *.pem
 
+echo ".terraform/" >> .gitignore
+echo "terraform.tfstate" >> .gitignore
+echo "terraform.tfstate.backup" >> .gitignore
+
+
