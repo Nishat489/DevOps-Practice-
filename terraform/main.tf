@@ -23,3 +23,12 @@ module "ec2_instance" {
   security_group_ids = var.security_group_ids
   instance_name = var.instance_name
 }
+
+module "vpc" {
+  source              = "./modules/vpc"
+  project             = "dev"
+  vpc_cidr            = "10.0.0.0/16"
+  public_subnet_cidr  = "10.0.1.0/24"
+  private_subnet_cidr = "10.0.2.0/24"
+  az                  = "us-east-1a"
+}
