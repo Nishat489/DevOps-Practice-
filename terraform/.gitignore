@@ -1,0 +1,9 @@
+# Ignore Terraform state files and sensitive files
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfvars
+
+# Ignore SSH private keys
+*.pem
+
